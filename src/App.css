@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: url("https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Ydatatable {
+  max-width: 905px;
+  margin: 50px auto;
+  
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Ydatatable table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(22, 22, 22); /* Gray background for the table */
+}
+
+.Ydatatable table td,
+.Ydatatable table th {
+  padding: 10px 15px;
+  border: 1px solid black;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* To resize the icons to 50px by 50px */
+.Ydatatable table td img {
+  width: 150px;
+  height: 100px;
+}
+
+.Ydatatable table tr:nth-child(even) {
+  background-color: #464646; /* Light background color for odd rows */
 }

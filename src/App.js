@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Datatable from './components/Datatable';
+import Sampledata from './Sampledata';
+
+const COLUMNS = [
+  {
+    title: "Date",
+    field: "Date"
+  },
+  {
+    title: "Icon",
+    field: "Icon"
+  },
+  {
+    title: "Event",
+    field: "Event"
+  },
+  {
+    title: "Genre",
+    field: "Genre"
+  },
+  {
+    title: "Venue",
+    field: "Venue"
+  }
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Datatable data={Sampledata} columns={COLUMNS} />
   );
 }
 
