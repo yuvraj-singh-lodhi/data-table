@@ -16,31 +16,93 @@ body {
 .Ydatatable {
   max-width: 905px;
   margin: 50px auto;
-  
   padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Add a border with a slight transparency */
   border-radius: 10px;
 }
 
 .Ydatatable table {
   border-collapse: collapse;
   width: 100%;
-  background-color: rgb(22, 22, 22); /* Gray background for the table */
+  background-color: transparent;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2);
+  border-radius: 10px; /* Set border radius for the table */
+}
+
+.Ydatatable table th {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px; /* Set border radius for the table header */
+}
+
+.Ydatatable table th button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Ydatatable table th button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Ydatatable table th button .icon {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.Ydatatable table th button .up-icon {
+  color: green;
+}
+
+.Ydatatable table th button .down-icon {
+  color: red;
 }
 
 .Ydatatable table td,
 .Ydatatable table th {
   padding: 10px 15px;
-  border: 1px solid black;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Add a slightly transparent border to the table cells */
   text-align: left;
   font-size: 16px;
 }
 
-/* To resize the icons to 50px by 50px */
 .Ydatatable table td img {
   width: 150px;
   height: 100px;
 }
 
-.Ydatatable table tr:nth-child(even) {
-  background-color: #464646; /* Light background color for odd rows */
+.Ydatatable table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Ydatatable table tfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Ydatatable table .pagination {
+  display: flex;
+  align-items: center;
+}
+
+.Ydatatable table .pagination button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fcfcfc;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.Ydatatable table .pagination button:hover {
+  color: #555;
 }

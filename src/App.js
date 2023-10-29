@@ -1,6 +1,10 @@
+
 import './App.css';
 import Datatable from './components/Datatable';
 import Sampledata from './Sampledata';
+import data from './Sampledata';
+
+
 
 const COLUMNS = [
   {
